@@ -39,7 +39,8 @@ public class Commands  {
         CommandHandler.full.addAll(CommandHandler.by21);
         CommandHandler.by21.clear();
         CommandHandler.anyMoreNumbers = false;
-        System.out.println("Все списки в одном" + CommandHandler.full);
+        if (CommandHandler.full.isEmpty()) System.out.println("Нечего соеднять, списки пусты.");
+        else System.out.println("Все списки в одном" + CommandHandler.full + "\nПроизведено слияние массивов!");
 
     }
     public static void clearAllArrays(){

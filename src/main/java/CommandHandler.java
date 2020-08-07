@@ -41,7 +41,6 @@ public class CommandHandler {
                 break;
             case "merge":
                 Commands.merge();
-                System.out.println("Произведено слияние массивов!");
                 break;
             case "print":
                 if (by3.isEmpty()) System.out.println("Список деления на 3 пуст");
